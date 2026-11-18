@@ -1,0 +1,5 @@
+block_id,role,volunteer_id,requested_by,note
+D1-REG,lead,V01,Paula (chair),"I want to personally welcome people at registration"
+D1-P1,escort,V01,Paula (chair),"I'll escort the Panel 1 speakers myself"
+D1-WEL,mc,V01,Paula (chair),"I'll give the welcome remarks"
+D0-AV,it,V02,Andrés,"Andrés already booked the AV test with the building"

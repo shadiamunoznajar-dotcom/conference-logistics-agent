@@ -1,0 +1,19 @@
+{
+  "to": [
+    "mvillalobos@harvard-example.edu"
+  ],
+  "cc": [],
+  "speaker_id": "S02",
+  "language": "es",
+  "purpose": "reminder",
+  "subject": "Confirmación del desayuno y horario del Panel 1",
+  "body": "Hola, Mateo:\n\n¿Podrás pasar por el desayuno del viernes 16, de 09:30 a 10:30 en el comedor de Dunmore Hall (3 Quincy Walk)? La confirmación quedó pendiente del 13 de abril; si ya sabes si podrás venir después de clase, avísanos cuanto antes. La solicitud para tus dos estudiantes sigue pendiente de revisión; por ahora no están confirmados.\n\nComo moderador del Panel 1, te esperamos a las 15:40 en Larkin Auditorium (14 Hollis Lane, Cambridge). El panel está programado de 16:10 a 17:10.\n\n¡Gracias!\nEquipo Antara",
+  "policy_refs": null,
+  "sent": false,
+  "send_blocked_reasons": [
+    "Speaker has an open human decision."
+  ],
+  "fingerprint": "79ac9843ef525df4b3c6b7f3ceed4cc33ce35dc28d1ff0376035c1e2e6d0def4",
+  "run_id": 6,
+  "context_hash": "e918b7a7605a8eb59cc8085affcc27453bbf7c067a431c7f00b49becc3734bbd"
+}

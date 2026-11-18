@@ -1,0 +1,20 @@
+{
+  "to": [
+    "groups@charlesrivergrand-example.com"
+  ],
+  "cc": [],
+  "speaker_id": null,
+  "language": "en",
+  "purpose": "hotel",
+  "subject": "Urgent: Antara Conference rooming list updates for Apr 16",
+  "body": "Dear Groups Desk,\n\nWe realize the April 13 change deadline has passed. Could you please confirm which of these updates you can still accommodate for Antara Conference at Harvard?\n\n• Ana Lucía Quispe Mamani: move Apr 15–17 to check-in Apr 16, checkout Apr 18 (nights Apr 16 and 17). Her replacement flight lands at 3:40 PM Friday, and she is going straight to the conference. Please hold the room for a later Friday arrival; exact hotel ETA is not yet known. No early check-in needed.\n• Ricardo Paredes Leiva: he is missing from your list. Please add check-in Apr 16, checkout Apr 18 (nights Apr 16 and 17). His flight lands at 6:50 AM Friday; hotel ETA is unconfirmed. We understand the 48-hour early check-in notice window has passed. If he reaches you before 3 PM, could you advise if an early room is still possible, or if luggage storage is available until regular check-in?\n• Javier Huamán Torres: move check-in from Apr 15 to Apr 16 and retain Apr 17 checkout (one night). His new flight lands at 2:10 PM Friday; no early check-in requested because his hotel arrival time is not known.\n\nElena Castañeda Ruiz, Valeria Montenegro Ugarte and Camila Ferreyra Soto remain Apr 15–17; Isabel Navarro Prado remains Apr 16–18. Please confirm the revised list and flag anything you cannot accommodate.\n\nThank you,\nAntara Conference Team",
+  "policy_refs": null,
+  "sent": false,
+  "send_blocked_reasons": [
+    "Only reminders and policy answers may be sent.",
+    "Recipient is not the original approved speaker address."
+  ],
+  "fingerprint": "2af695f09a6671a44845b467cd14d064c36d673e4e46d9fb99720afb21cd90e6",
+  "run_id": 6,
+  "context_hash": "6fc932e826bd2378000d19001a484be50285c3d6bf36578eff73f0c76eaca5a0"
+}

@@ -1,0 +1,19 @@
+{
+  "to": [
+    "inavarro@kallpa2050-example.an"
+  ],
+  "cc": [],
+  "speaker_id": "S11",
+  "language": "es",
+  "purpose": "reminder",
+  "subject": "Datos pendientes — keynote de cierre",
+  "body": "Hola, Isabel:\n\nGracias por compartir el enlace a tus diapositivas. Solo nos faltan tu bio corta (máximo 120 palabras), tu foto y tus necesidades de AV (o «ninguna»). Como el plazo del 13 de abril a las 23:59 ya pasó, te agradeceríamos que nos los envíes cuanto antes.\n\nTe esperamos el sábado 17 a las 12:45 en Larkin Auditorium (14 Hollis Lane, Cambridge). El programa vigente indica 13:15–13:45; Paula está revisando la diferencia con la duración que mencionaste. No hay ningún cambio confirmado.\n\nGracias,\nEquipo Antara",
+  "policy_refs": null,
+  "sent": false,
+  "send_blocked_reasons": [
+    "Speaker has an open human decision."
+  ],
+  "fingerprint": "377143321c9c4b5381a5b977c84fec32b5cba68c77fad0c821ea3403c4bf6dec",
+  "run_id": 6,
+  "context_hash": "515a4f33fd414063040134946b82ba158de5b256c84a7a0d018c6cb70a9c3ac5"
+}

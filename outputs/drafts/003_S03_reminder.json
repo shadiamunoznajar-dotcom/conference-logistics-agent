@@ -1,0 +1,19 @@
+{
+  "to": [
+    "alquispe@unkallpa.edu.an"
+  ],
+  "cc": [],
+  "speaker_id": "S03",
+  "language": "es",
+  "purpose": "reminder",
+  "subject": "Urgente: llegada del AA926 y Panel 1 del viernes",
+  "body": "Hola, Ana Lucía:\n\nGracias por avisarnos y enviar el nuevo itinerario. El AA926 aterriza el viernes 16 a las 15:40, justo a la hora de convocatoria del Panel 1 (16:10–17:10, en español). Entendemos que irás directo al Larkin Auditorium (14 Hollis Lane, Cambridge) con tu maleta. Avísanos cuando estés en camino y tengas una hora estimada de llegada. Lucía Medina será tu enlace en la sede. Estamos coordinando con el equipo cómo recibirte si el panel ya empezó; por ahora el horario no cambia. No te contaremos para el desayuno.\n\nTambién pediremos al hotel que mantenga tu estancia del 16 al 18 y sepa que llegarás más tarde; aún no tenemos confirmación. Solo nos falta saber si necesitas algo de AV (o si no necesitas nada). El plazo original fue el martes 13 de abril; avísanos cuando puedas, sin retrasar tu traslado.\n\nGracias y buen viaje,\nEquipo Antara",
+  "policy_refs": null,
+  "sent": false,
+  "send_blocked_reasons": [
+    "Speaker has an open human decision."
+  ],
+  "fingerprint": "d5c239de844ffd99dde4f2df773f55014f89c66bb9a2e799d9da311918438ed1",
+  "run_id": 6,
+  "context_hash": "7a92353a6999a505ab74ea2d480c1dfbafcf84e9dbe9b5433b34f6a36f78bc05"
+}

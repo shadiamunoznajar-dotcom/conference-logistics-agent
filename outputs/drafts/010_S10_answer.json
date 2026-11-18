@@ -1,0 +1,23 @@
+{
+  "to": [
+    "taguirre@bostonu-example.edu"
+  ],
+  "cc": [],
+  "speaker_id": "S10",
+  "language": "en",
+  "purpose": "answer",
+  "subject": "Confirmed program time for Saturday’s Panel 3",
+  "body": "Hi Tomás,\n\nThanks for flagging the missing times. Panel 3 is Saturday, April 17, 10:15–11:15 AM EDT, in Spanish, at Larkin Auditorium (14 Hollis Lane, Cambridge). Please arrive at 9:45 AM for the moderator call. The logistics packet is meant to include the timed program; we’ll check the copy you received.\n\nBest,\nAntara Conference Team",
+  "policy_refs": [
+    "The full program with times is attached to every logistics email as `program_antara_2027.pdf`. / El programa completo con horarios va adjunto como `program_antara_2027.pdf`.",
+    "Call time: speakers arrive at the venue **30 minutes before** their session. / Los speakers llegan **30 minutos antes** de su sesión.",
+    "Session language is listed in the program for each session. / El idioma de cada sesión figura en el programa."
+  ],
+  "sent": false,
+  "send_blocked_reasons": [
+    "Speaker has an open human decision."
+  ],
+  "fingerprint": "f989494469ed7ecaa4f887c2239c0d8a0853850fa5337546981e4e13cb3b8fcc",
+  "run_id": 6,
+  "context_hash": "96b85e1c9bb722ef8e399fb8ea59ef3b810746a14f38a34f2a3b574c49854257"
+}

@@ -1,0 +1,21 @@
+{
+  "to": [
+    "sofia.vargas@asah-antara.org"
+  ],
+  "cc": [],
+  "speaker_id": "S03",
+  "language": "es",
+  "purpose": "heads_up",
+  "subject": "Urgente para coordinación: llegada de Ana Lucía al Panel 1",
+  "body": "Hola, Sofía:\n\nEl AA926 de Ana Lucía Quispe aterriza en Logan el viernes 16 a las 15:40 EDT, justo a la hora de convocatoria en Larkin Auditorium (14 Hollis Lane, Cambridge). Irá directamente a Larkin con su maleta; no llegará a la convocatoria y podría perderse el inicio de las 16:10. No hay hora estimada de llegada a la sede.\n\nPor favor coordina con Lucía Medina (enlace desde las 15:40) un punto de recepción y resguardo de la maleta, y una señal discreta para avisar a Mateo Villalobos cuando llegue. Pide una hora estimada cuando Ana Lucía esté en camino y avisa a Paula. El bloque sigue de 16:10 a 17:10 en español; cualquier cambio o incorporación una vez iniciado el panel queda sujeto al plan que confirme Paula.\n\nGracias,\nEquipo Antara",
+  "policy_refs": null,
+  "sent": false,
+  "send_blocked_reasons": [
+    "Only reminders and policy answers may be sent.",
+    "Recipient is not the original approved speaker address.",
+    "Speaker has an open human decision."
+  ],
+  "fingerprint": "3652433875f82e45f0887a58124c1a3e49ba1fa2a71bcd1e69a341250401a2f4",
+  "run_id": 7,
+  "context_hash": "a24da11a23a9a96ba24681657440a9733ed0df1cda0ac2ce97d2bc28280502a8"
+}

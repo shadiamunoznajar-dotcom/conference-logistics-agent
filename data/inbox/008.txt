@@ -1,0 +1,13 @@
+From: Mail Delivery Subsystem <mailer-daemon@asah-antara.org>
+To: conference@asah-antara.org
+Date: Mon, 5 Apr 2027 09:01 -0400
+Subject: Undeliverable: Logística Antara Conference at Harvard 2027
+Attachments: (none)
+
+Delivery has failed to these recipients or groups:
+
+ricardo.paredes@gmial.com
+The email address you entered couldn't be found. Please check the recipient's email address and try to resend the message.
+
+Diagnostic information for administrators:
+Remote server returned '550 5.1.1 RESOLVER.ADR.RecipientNotFound; domain not found'

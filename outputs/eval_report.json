@@ -1,0 +1,38 @@
+{
+ "tracker": {
+  "correct": 95,
+  "total": 96,
+  "accuracy": 0.99,
+  "mismatches": [
+   "S02.breakfast_rsvp: expected received, got partial"
+  ]
+ },
+ "flags": {
+  "found": 20,
+  "expected": 22,
+  "recall": 0.909,
+  "missed": [
+   "early_checkin_request:S08 (lands 2:10 PM)",
+   "missing_attachment:S10 (program PDF had no session times)"
+  ],
+  "over_escalated_policy_questions": []
+ },
+ "messages": {
+  "count": 16,
+  "missing_reminders": [],
+  "unneeded_reminders": [
+   "S02"
+  ],
+  "hotel_email_drafted": true,
+  "problems": [
+   "drafts/950_heads_up_94a9219d40.json is in en but S03 prefers es"
+  ]
+ },
+ "schedule": {
+  "violations": 0,
+  "details": [],
+  "must_keep_pins_kept": "1/1",
+  "conflicting_pins_kept": 2
+ },
+ "score_out_of_100": 91.5
+}

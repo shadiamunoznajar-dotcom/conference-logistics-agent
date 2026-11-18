@@ -1,0 +1,13 @@
+id,name,email,language,role,session,travel_category,coming_from,flight_booked_by,arrival,departure,hotel_covered,hotel_nights_requested,slides_expected,notes
+S01,Dra. Elena Castañeda Ruiz,ecastaneda@bancocentral-antara.an,es,keynote,D1-K1,A,"Kallpa, Antara",organizers,2027-04-15T18:05 AeroAntara AA912 KLP-BOS,2027-04-17T21:40 AeroAntara AA913,yes,2027-04-15 to 2027-04-17,yes,Former central bank deputy governor
+S02,Prof. Mateo Villalobos,mvillalobos@harvard-example.edu,es,moderator,D1-P1,L,"Cambridge, MA",n/a,local,local,no,,no,Local faculty
+S03,Ana Lucía Quispe Mamani,alquispe@unkallpa.edu.an,es,panelist,D1-P1,B,"Kallpa, Antara",speaker (reimbursed),,,yes,2027-04-15 to 2027-04-17,unknown,
+S04,Daniel Okafor,dokafor@civicslab-example.org,en,panelist,D1-P1,C,"New York, NY",speaker (self-funded),,,no,,unknown,
+S05,Valeria Montenegro Ugarte,vmontenegro@aguasdelsur-example.an,es,panelist,D2-P2,A,"Arequi, Antara",organizers,2027-04-15T22:30 AeroAntara AA918 KLP-BOS,2027-04-17T18:00 AeroAntara AA919,yes,2027-04-15 to 2027-04-17,unknown,
+S06,Ricardo Paredes Leiva,ricardo.paredes@gmial.com,es,panelist,D2-P2,B,"Kallpa, Antara",speaker (reimbursed),,,yes,2027-04-15 to 2027-04-17,unknown,Personal email
+S07,Dr. Margaret Lin,mlin@waterpolicy-example.org,en,moderator,D2-P2,C,"Washington, DC",speaker (self-funded),,,no,,no,
+S08,Javier Huamán Torres,jhuaman@pucantara.edu.an,es,panelist,D2-P3,A,"Kallpa, Antara",organizers,2027-04-15T16:20 AeroAntara AA914 KLP-BOS,2027-04-17T20:00 AeroAntara AA915,yes,2027-04-15 to 2027-04-17,unknown,
+S09,Camila Ferreyra Soto,cferreyra@ensenaantara-example.org,es,panelist,D2-P3,B,"Kallpa, Antara",speaker (reimbursed),,,yes,2027-04-15 to 2027-04-17,unknown,
+S10,Tomás Aguirre,taguirre@bostonu-example.edu,en,moderator,D2-P3,L,"Boston, MA",n/a,local,local,no,,no,Local faculty; bilingual but prefers English email
+S11,Isabel Navarro Prado,inavarro@kallpa2050-example.an,es,keynote,D2-K2,A,"Kallpa, Antara",organizers,2027-04-16T21:50 AeroAntara AA916 KLP-BOS,2027-04-18T10:00 AeroAntara AA917,yes,2027-04-16 to 2027-04-18,yes,
+S12,Prof. Lucas Benítez Arce,lbenitez@unkallpa.edu.an,es,panelist,D2-P4,C,"Kallpa, Antara",speaker (self-funded),,,no,,unknown,Solo speaker for Panel 4 (format: talk + Q&A)

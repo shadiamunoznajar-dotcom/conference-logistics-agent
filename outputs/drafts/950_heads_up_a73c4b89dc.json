@@ -1,0 +1,21 @@
+{
+  "to": [
+    "mvillalobos@harvard-example.edu"
+  ],
+  "cc": [],
+  "speaker_id": "S03",
+  "language": "es",
+  "purpose": "heads_up",
+  "subject": "Urgente para moderación: posible llegada tardía de Ana Lucía al Panel 1",
+  "body": "Hola, Mateo:\n\nEl vuelo de reemplazo AA926 de Ana Lucía Quispe aterriza el viernes 16 a las 15:40 EDT, justo a la hora de convocatoria en Larkin Auditorium (14 Hollis Lane, Cambridge). Irá directamente desde Logan con su maleta. No podrá llegar a la convocatoria y podría perderse el inicio de las 16:10; todavía no tenemos hora estimada de llegada a la sede.\n\nEl panel en español sigue programado de 16:10 a 17:10. Mientras Paula decide cómo proceder, por favor prepara una apertura con quienes estén presentes y propón un punto de transición para incorporarla si llega con el panel en marcha. Coordina la señal de llegada con Sofía Vargas y Lucía Medina, sin anunciar cambios hasta que Paula confirme el plan.\n\nGracias,\nEquipo Antara",
+  "policy_refs": null,
+  "sent": false,
+  "send_blocked_reasons": [
+    "Only reminders and policy answers may be sent.",
+    "Recipient is not the original approved speaker address.",
+    "Speaker has an open human decision."
+  ],
+  "fingerprint": "16949e92d2ba6b0a5b70d6813faec584a2e1f96fe6f02c96d72755b061a15da8",
+  "run_id": 7,
+  "context_hash": "a24da11a23a9a96ba24681657440a9733ed0df1cda0ac2ce97d2bc28280502a8"
+}

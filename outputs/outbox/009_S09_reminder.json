@@ -1,0 +1,23 @@
+{
+  "to": [
+    "cferreyra@ensenaantara-example.org"
+  ],
+  "cc": [],
+  "speaker_id": "S09",
+  "language": "es",
+  "purpose": "reminder",
+  "subject": "Panel 3: foto, desayuno, alimentación y AV",
+  "body": "Hola, Camila:\n\nGracias por la bio y los documentos del vuelo. Nos faltan tu foto, tus alergias o restricciones alimentarias (o «ninguna»), tu confirmación para el desayuno del viernes 16 (09:30–10:30, comedor de Dunmore Hall, 3 Quincy Walk) y tus necesidades de AV (o «ninguna»). El plazo fue el 13 de abril a las 23:59; por favor responde cuanto antes.\n\nSobre los traslados: no hacen falta comprobantes de taxi/Uber/Lyft entre el aeropuerto, el hotel y las sedes dentro del tope total de US$100. El sábado 17 te esperamos a las 09:45 en Larkin Auditorium (14 Hollis Lane, Cambridge) para el Panel 3, de 10:15 a 11:15.\n\n¡Gracias!\nEquipo Antara",
+  "policy_refs": [
+    "All traveling speakers (A, B, C): taxi/Uber/Lyft between the airport, hotel and venues is reimbursed up to **US$100 total**. **No receipts are needed** for this amount. / Taxi/Uber/Lyft entre aeropuerto, hotel y sedes se reembolsa hasta **US$100 en total**. **No se necesitan comprobantes** para este monto."
+  ],
+  "sent": true,
+  "send_blocked_reasons": [],
+  "fingerprint": "0482d269e568f890c5ceeb19969e747a080649fc97679a4b285dbae2b12b6993",
+  "message_id": "M-0482d269e568f890c5ce",
+  "logical_file": "009_S09_reminder.json",
+  "outbox_file": "009_S09_reminder.json",
+  "supersedes": null,
+  "sent_at": "2026-11-18T00:27:56.080852+00:00",
+  "run_id": 8
+}

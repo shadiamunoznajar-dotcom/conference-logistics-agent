@@ -1,0 +1,23 @@
+{
+  "to": [
+    "jhuaman@pucantara.edu.an"
+  ],
+  "cc": [],
+  "speaker_id": "S08",
+  "language": "es",
+  "purpose": "reminder",
+  "subject": "Panel 3: AV, vuelo actualizado y equipaje",
+  "body": "Hola, Javier:\n\nGracias por la foto y el nuevo itinerario. Solo nos falta saber si necesitas algo de AV; el plazo fue el 13 de abril a las 23:59, así que avísanos cuanto antes, incluso si no necesitas nada. Con el AA924 llegando el viernes a las 14:10, no te contaremos para el desayuno. Estamos solicitando al hotel el cambio de entrada al viernes 16; aún no está confirmado.\n\nSobre tu consulta: la tarifa incluye equipaje de mano y un artículo personal. Puedes agregar una maleta documentada por tu cuenta en la web de AeroAntara con tu código de reserva. Te esperamos el sábado 17 a las 09:45 en Larkin Auditorium (14 Hollis Lane, Cambridge) para el Panel 3, de 10:15 a 11:15.\n\n¡Gracias!\nEquipo Antara",
+  "policy_refs": [
+    "**Category A:** economy fare that includes a carry-on and one personal item only. A checked bag is at the speaker's own cost; they can add it on the AeroAntara website with their booking code. / Tarifa económica que incluye solo equipaje de mano y un artículo personal. La maleta documentada corre por cuenta del speaker; puede agregarla en la web de AeroAntara con su código de reserva."
+  ],
+  "sent": true,
+  "send_blocked_reasons": [],
+  "fingerprint": "a43ee5228f549168b0e43b3f66980308d13936ec55da78f495addcb7a85d4cbd",
+  "message_id": "M-a43ee5228f549168b0e4",
+  "logical_file": "008_S08_reminder.json",
+  "outbox_file": "008_S08_reminder.json",
+  "supersedes": null,
+  "sent_at": "2026-11-18T00:27:56.038583+00:00",
+  "run_id": 8
+}

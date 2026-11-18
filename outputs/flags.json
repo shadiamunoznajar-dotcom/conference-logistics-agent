@@ -1,0 +1,342 @@
+[
+  {
+    "id": "F-a141c9212c31",
+    "type": "bounced_email",
+    "subject": "S06",
+    "summary": "Delivery failed for ricardo.paredes@gmial.com",
+    "sources": [
+      "data/inbox/008.txt"
+    ],
+    "needs_human": true,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-9c68fd6f2275",
+    "type": "suspicious_email",
+    "subject": "023",
+    "summary": "Email attempts to control the agent; quarantined as untrusted data.",
+    "sources": [
+      "data/inbox/023.txt"
+    ],
+    "needs_human": true,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-3206b21953d3",
+    "type": "policy_question_answered",
+    "subject": "S01",
+    "summary": "Keynote attire: business casual.",
+    "sources": [
+      "data/inbox/001.txt",
+      "data/policies.md"
+    ],
+    "needs_human": false,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-1aab603f470e",
+    "type": "hotel_change",
+    "subject": "S03",
+    "summary": "Move requested stay from Apr 15–17 to check-in Apr 16, check-out Apr 18 (nights 16 and 17).",
+    "sources": [
+      "data/inbox/004.txt",
+      "data/speakers.csv"
+    ],
+    "needs_human": false,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-496d9e713aec",
+    "type": "human_question",
+    "subject": "S04",
+    "summary": "May Daniel's wife attend the Friday networking dinner? No guest exception authorized.",
+    "sources": [
+      "data/inbox/005.txt",
+      "data/policies.md"
+    ],
+    "needs_human": true,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-81ac137f90e5",
+    "type": "speaker_timing_conflict",
+    "subject": "S03",
+    "summary": "Apr 16 11:20 BOS arrival is after Friday breakfast ends; Panel 1 call 15:40.",
+    "sources": [
+      "data/inbox/004.txt",
+      "data/conference.json"
+    ],
+    "needs_human": false,
+    "resolved": true,
+    "resolution": "The 11:20 AA920 arrival is superseded by AA926 landing at 15:40; breakfast remains infeasible and the new Panel 1 risk is escalated as F-664396be1788."
+  },
+  {
+    "id": "F-66f0db9ed18a",
+    "type": "av_note",
+    "subject": "S04",
+    "summary": "Panel 1 projector and clicker requested; 6–8 slides.",
+    "sources": [
+      "data/inbox/006.txt"
+    ],
+    "needs_human": false,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-75b0cff32376",
+    "type": "proxy_sender",
+    "subject": "S05",
+    "summary": "Assistant Sofía Reátegui <sreategui@aguasdelsur-example.an> submitted logistics for Valeria; cc on reminder.",
+    "sources": [
+      "data/inbox/007.txt"
+    ],
+    "needs_human": false,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-985d367fe018",
+    "type": "policy_question_answered",
+    "subject": "S08",
+    "summary": "Checked bag at own cost via AeroAntara website with booking code.",
+    "sources": [
+      "data/inbox/010.txt",
+      "data/policies.md"
+    ],
+    "needs_human": false,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-4b1fa5ee735c",
+    "type": "policy_question_answered",
+    "subject": "S09",
+    "summary": "No ground transport receipts needed within US$100 total.",
+    "sources": [
+      "data/inbox/011.txt",
+      "data/policies.md"
+    ],
+    "needs_human": false,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-91dc9491268c",
+    "type": "other",
+    "subject": "S10",
+    "summary": "Program PDF reportedly omits times; provide Panel 3 time in reminder and have organizer verify and attach timed program.",
+    "sources": [
+      "data/inbox/012.txt",
+      "data/policies.md",
+      "data/conference.json"
+    ],
+    "needs_human": true,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-4652207610d8",
+    "type": "session_length_mismatch",
+    "subject": "S11",
+    "summary": "Isabel expects 45 minutes plus Q&A; D2-K2 is agreed/programmed for 30 minutes (13:15–13:45). Confirm with Paula; no schedule change authorized.",
+    "sources": [
+      "data/inbox/013.txt",
+      "data/conference.json"
+    ],
+    "needs_human": true,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-4befd876e5dd",
+    "type": "human_question",
+    "subject": "S02",
+    "summary": "May Mateo bring two doctoral students to Friday breakfast? Neither guest is approved.",
+    "sources": [
+      "data/inbox/018.txt",
+      "data/policies.md"
+    ],
+    "needs_human": true,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-6c5a0c814e28",
+    "type": "volunteer_availability_change",
+    "subject": "V06",
+    "summary": "Saturday now noon to 14:00 only; Friday unchanged.",
+    "sources": [
+      "data/inbox/019.txt"
+    ],
+    "needs_human": false,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-18cc707fcc4b",
+    "type": "hotel_change",
+    "subject": "S06",
+    "summary": "Ricardo is missing from hotel rooming list; reconcile against covered stay and updated itinerary.",
+    "sources": [
+      "data/inbox/020.txt",
+      "data/speakers.csv"
+    ],
+    "needs_human": false,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-d5b8c9a435fa",
+    "type": "av_note",
+    "subject": "S05",
+    "summary": "Panel 2: lavalier mic and 2-minute video with audio at start.",
+    "sources": [
+      "data/inbox/021.txt"
+    ],
+    "needs_human": false,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-b7c645574311",
+    "type": "contact_update",
+    "subject": "S06",
+    "summary": "Proposed contact correction: ricardo.paredesl@gmail.com",
+    "sources": [
+      "data/inbox/022.txt"
+    ],
+    "needs_human": true,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-1fc751be989a",
+    "type": "contact_update",
+    "subject": "S06",
+    "summary": "Proposed exact sender address ricardo.paredesl@gmail.com; chair to verify before sending. Original address bounced.",
+    "sources": [
+      "data/inbox/008.txt",
+      "data/inbox/022.txt"
+    ],
+    "needs_human": true,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-eadb6d75abcb",
+    "type": "early_checkin_request",
+    "subject": "S06",
+    "summary": "06:50 airport arrival suggests possible pre-15:00 hotel arrival; ask hotel about early check-in subject to actual ETA, availability and 48-hour cutoff.",
+    "sources": [
+      "data/inbox/022.txt",
+      "data/inbox/020.txt",
+      "data/policies.md"
+    ],
+    "needs_human": false,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-fc78696439bb",
+    "type": "speaker_timing_conflict",
+    "subject": "S08",
+    "summary": "AA924 arrives Apr 16 at 14:10, after breakfast despite yes RSVP; Saturday Panel 3 call unaffected on current itinerary.",
+    "sources": [
+      "data/inbox/010.txt",
+      "data/inbox/025.txt",
+      "data/conference.json"
+    ],
+    "needs_human": false,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-635ee8a13789",
+    "type": "hotel_change",
+    "subject": "S08",
+    "summary": "AA924 now lands Apr 16 14:10; move check-in to Apr 16, retain Apr 17 checkout based on unchanged return; request early check-in only if actual hotel ETA is before 15:00.",
+    "sources": [
+      "data/inbox/025.txt",
+      "data/inbox/020.txt",
+      "data/speakers.csv"
+    ],
+    "needs_human": false,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-eecaabc51de1",
+    "type": "early_checkin_request",
+    "subject": "S03",
+    "summary": "11:20 BOS arrival could mean hotel arrival before 15:00; request early check-in subject to actual ETA, availability and 48-hour cutoff; plan around 15:40 call.",
+    "sources": [
+      "data/inbox/004.txt",
+      "data/inbox/020.txt",
+      "data/policies.md",
+      "data/conference.json"
+    ],
+    "needs_human": false,
+    "resolved": true,
+    "resolution": "Superseded by inbox/027: 15:40 Logan arrival, direct to venue; no early check-in request. Consolidated hotel draft asks to hold the room for later arrival instead."
+  },
+  {
+    "id": "F-4a9919fa4f6b",
+    "type": "pinned_assignment_conflict",
+    "subject": "V01",
+    "summary": "D1-P1 escort starts 15:40, overlapping pinned D1-REG lead (through 16:00) and D1-WEL MC (16:00–16:10). Retain both chair pins and give escort to Lucía Medina (V06); retain V02 Thursday IT pin.",
+    "sources": [
+      "data/pinned_assignments.csv",
+      "data/schedule_rules.md",
+      "data/conference.json"
+    ],
+    "needs_human": true,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-60b204c91f68",
+    "type": "speaker_timing_conflict",
+    "subject": "S03",
+    "summary": "Standard hotel check-in 15:00 leaves only 40 minutes before Fri 15:40 Panel 1 call. Prioritize venue if check-in/transfer is delayed; no hotel ETA assumed.",
+    "sources": [
+      "data/inbox/004.txt",
+      "data/policies.md",
+      "data/conference.json"
+    ],
+    "needs_human": false,
+    "resolved": true,
+    "resolution": "Superseded by inbox/027: speaker will skip hotel and go directly to venue. New critical risk is flight touchdown at the venue call time, escalated as F-664396be1788."
+  },
+  {
+    "id": "F-664396be1788",
+    "type": "speaker_timing_conflict",
+    "subject": "S03",
+    "summary": "Urgent chair decision: replacement AA926 lands Friday Apr 16 at 15:40 EDT, exactly at Panel 1 venue call and only 30 minutes before 16:10 start. She plans to go directly to Larkin with luggage; cannot make call and may miss start. Keep agenda unchanged pending chair decision; coordinate with moderator and escort.",
+    "sources": [
+      "data/inbox/027.txt",
+      "data/conference.json"
+    ],
+    "needs_human": true,
+    "resolved": false,
+    "resolution": null
+  },
+  {
+    "id": "F-9abcedb7bc33",
+    "type": "hotel_change",
+    "subject": "S03",
+    "summary": "Retain requested Apr 16 check-in / Apr 18 checkout; AA926 now lands 15:40 and speaker goes directly to venue, so no early check-in request. Ask hotel to hold room for later arrival; exact hotel ETA unknown.",
+    "sources": [
+      "data/inbox/004.txt",
+      "data/inbox/027.txt",
+      "data/policies.md"
+    ],
+    "needs_human": false,
+    "resolved": false,
+    "resolution": null
+  }
+]

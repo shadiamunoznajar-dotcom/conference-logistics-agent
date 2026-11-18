@@ -1,0 +1,506 @@
+{
+  "S01": {
+    "bio": {
+      "status": "received",
+      "value": "Elena Castañeda Ruiz es economista y fue vicepresidenta del Banco Central de Reserva de Antara entre 2016 y 2022, donde lideró la respuesta monetaria a la caída de los precios de los metales. Es doctora en Economía por la Universidad Nacional de Kallpa y hoy enseña política macroeconómica en la misma universidad.",
+      "source": "data/inbox/001.txt"
+    },
+    "headshot": {
+      "status": "received",
+      "value": "castaneda_foto.jpg",
+      "source": "data/inbox/001.txt"
+    },
+    "dietary": {
+      "status": "received",
+      "value": "Vegetarian; tree nut allergy (walnuts, almonds, etc.)",
+      "source": "data/inbox/001.txt; data/inbox/002.txt"
+    },
+    "breakfast_rsvp": {
+      "status": "received",
+      "value": "Yes",
+      "source": "data/inbox/001.txt"
+    },
+    "av_needs": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "arrival": {
+      "status": "received",
+      "value": "2027-04-15T18:05 AeroAntara AA912 KLP-BOS",
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "receipts": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "slides": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    }
+  },
+  "S02": {
+    "bio": {
+      "status": "received",
+      "value": "Mateo Villalobos es profesor de Ciencia Política y estudia las crisis de representación en los Andes. Su último libro analiza las once reformas electorales de Antara desde 1990.",
+      "source": "data/inbox/003.txt"
+    },
+    "headshot": {
+      "status": "received",
+      "value": "villalobos_headshot.png",
+      "source": "data/inbox/003.txt"
+    },
+    "dietary": {
+      "status": "received",
+      "value": "None",
+      "source": "data/inbox/003.txt"
+    },
+    "breakfast_rsvp": {
+      "status": "partial",
+      "value": "Tentative; may stop by after class (supersedes initial decline); two guests requested, not approved",
+      "source": "data/inbox/003.txt; data/inbox/018.txt"
+    },
+    "av_needs": {
+      "status": "received",
+      "value": "Standard microphone only",
+      "source": "data/inbox/003.txt"
+    },
+    "arrival": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "receipts": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "slides": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    }
+  },
+  "S03": {
+    "bio": {
+      "status": "received",
+      "value": "Ana Lucía Quispe Mamani es abogada constitucionalista y profesora de la Universidad Nacional de Kallpa. Fue asesora de la comisión de reforma política del Congreso de Antara.",
+      "source": "data/inbox/016.txt"
+    },
+    "headshot": {
+      "status": "received",
+      "value": "quispe_foto.jpg",
+      "source": "data/inbox/016.txt"
+    },
+    "dietary": {
+      "status": "received",
+      "value": "None",
+      "source": "data/inbox/016.txt"
+    },
+    "breakfast_rsvp": {
+      "status": "received",
+      "value": "Yes per speaker; infeasible: AA926 lands Fri Apr 16 15:40 after breakfast.",
+      "source": "data/inbox/004.txt; data/inbox/016.txt; data/inbox/027.txt"
+    },
+    "av_needs": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "arrival": {
+      "status": "received",
+      "value": "Fri Apr 16 15:40 Boston (EDT), AeroAntara AA926 (nuevo_itinerario_AA926.pdf); AA920 11:20 canceled/superseded. Plans airport directly to Larkin Auditorium with luggage. Return AA921 Apr 18 13:00 unchanged as last reported.",
+      "source": "data/inbox/004.txt; data/inbox/027.txt"
+    },
+    "receipts": {
+      "status": "received",
+      "value": "Original ticket boleto_AA920_quispe.pdf and proof of payment comprobante_pago_quispe.pdf retained; replacement itinerary nuevo_itinerario_AA926.pdf also received.",
+      "source": "data/inbox/004.txt; data/inbox/027.txt"
+    },
+    "slides": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    }
+  },
+  "S04": {
+    "bio": {
+      "status": "received",
+      "value": "Okafor_bio.docx",
+      "source": "data/inbox/005.txt"
+    },
+    "headshot": {
+      "status": "received",
+      "value": "okafor_headshot.jpg",
+      "source": "data/inbox/006.txt"
+    },
+    "dietary": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "breakfast_rsvp": {
+      "status": "received",
+      "value": "No; traveling Friday morning",
+      "source": "data/inbox/026.txt"
+    },
+    "av_needs": {
+      "status": "received",
+      "value": "Projector and clicker if available, 6–8 slides",
+      "source": "data/inbox/006.txt"
+    },
+    "arrival": {
+      "status": "received",
+      "value": "Apr 16 around noon, driving from New York to Cambridge",
+      "source": "data/inbox/005.txt"
+    },
+    "receipts": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "slides": {
+      "status": "missing",
+      "value": "Plans 6–8 slides; deck not yet sent",
+      "source": "data/inbox/006.txt"
+    }
+  },
+  "S05": {
+    "bio": {
+      "status": "received",
+      "value": "montenegro_bio.pdf",
+      "source": "data/inbox/007.txt"
+    },
+    "headshot": {
+      "status": "received",
+      "value": "montenegro_foto.jpg",
+      "source": "data/inbox/007.txt"
+    },
+    "dietary": {
+      "status": "received",
+      "value": "Celiac disease; gluten-free",
+      "source": "data/inbox/007.txt"
+    },
+    "breakfast_rsvp": {
+      "status": "received",
+      "value": "Yes",
+      "source": "data/inbox/007.txt"
+    },
+    "av_needs": {
+      "status": "received",
+      "value": "Lavalier microphone; 2-minute video with audio at start of remarks",
+      "source": "data/inbox/021.txt"
+    },
+    "arrival": {
+      "status": "received",
+      "value": "2027-04-15T22:30 AeroAntara AA918 KLP-BOS",
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "receipts": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "slides": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    }
+  },
+  "S06": {
+    "bio": {
+      "status": "received",
+      "value": "Ricardo Paredes Leiva es ingeniero ambiental y coordina el Observatorio del Agua de la sierra sur de Antara.",
+      "source": "data/inbox/022.txt"
+    },
+    "headshot": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "dietary": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "breakfast_rsvp": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "av_needs": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "arrival": {
+      "status": "received",
+      "value": "Apr 16 06:50 Boston, AeroAntara AA930; return Apr 18",
+      "source": "data/inbox/022.txt"
+    },
+    "receipts": {
+      "status": "received",
+      "value": "boleto_AA930_paredes.pdf; pago_paredes.pdf",
+      "source": "data/inbox/022.txt"
+    },
+    "slides": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    }
+  },
+  "S07": {
+    "bio": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "headshot": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "dietary": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "breakfast_rsvp": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "av_needs": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "arrival": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "receipts": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "slides": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    }
+  },
+  "S08": {
+    "bio": {
+      "status": "received",
+      "value": "Javier Huamán Torres dirige el Centro de Innovación Educativa de la Pontificia Universidad Católica de Antara. Ha diseñado programas de tutoría para escuelas rurales en cinco regiones del país.",
+      "source": "data/inbox/010.txt"
+    },
+    "headshot": {
+      "status": "received",
+      "value": "huaman_foto.jpg",
+      "source": "data/inbox/025.txt"
+    },
+    "dietary": {
+      "status": "received",
+      "value": "None",
+      "source": "data/inbox/010.txt"
+    },
+    "breakfast_rsvp": {
+      "status": "received",
+      "value": "Yes per Apr 7 reply; updated flight lands Apr 16 14:10 after breakfast, exclude from feasible count",
+      "source": "data/inbox/010.txt; data/inbox/025.txt"
+    },
+    "av_needs": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "arrival": {
+      "status": "received",
+      "value": "Apr 16 14:10 Boston, AeroAntara AA924 (itinerario_nuevo_AA924.pdf); original Apr 15 AA914 superseded; no return change reported",
+      "source": "data/speakers.csv; data/inbox/025.txt"
+    },
+    "receipts": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "slides": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    }
+  },
+  "S09": {
+    "bio": {
+      "status": "received",
+      "value": "Camila Ferreyra Soto es directora ejecutiva de Enseña Antara, una red de 900 docentes en escuelas públicas de zonas rurales.",
+      "source": "data/inbox/017.txt"
+    },
+    "headshot": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "dietary": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "breakfast_rsvp": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "av_needs": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "arrival": {
+      "status": "received",
+      "value": "Apr 15 20:45 Boston, AeroAntara AA922",
+      "source": "data/inbox/011.txt"
+    },
+    "receipts": {
+      "status": "received",
+      "value": "pago_tarjeta_ferreyra.pdf; boleto_AA922_ferreyra.pdf",
+      "source": "data/inbox/011.txt; data/inbox/017.txt"
+    },
+    "slides": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    }
+  },
+  "S10": {
+    "bio": {
+      "status": "received",
+      "value": "Authorized faculty bio link: https://bostonu-example.edu/faculty/taguirre",
+      "source": "data/inbox/012.txt"
+    },
+    "headshot": {
+      "status": "received",
+      "value": "aguirre_headshot.jpg",
+      "source": "data/inbox/024.txt"
+    },
+    "dietary": {
+      "status": "received",
+      "value": "Shellfish allergy",
+      "source": "data/inbox/024.txt"
+    },
+    "breakfast_rsvp": {
+      "status": "received",
+      "value": "Yes",
+      "source": "data/inbox/024.txt"
+    },
+    "av_needs": {
+      "status": "received",
+      "value": "None",
+      "source": "data/inbox/024.txt"
+    },
+    "arrival": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "receipts": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "slides": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    }
+  },
+  "S11": {
+    "bio": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "headshot": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "dietary": {
+      "status": "received",
+      "value": "Vegan",
+      "source": "data/inbox/013.txt"
+    },
+    "breakfast_rsvp": {
+      "status": "received",
+      "value": "No; arrives Friday night",
+      "source": "data/inbox/013.txt"
+    },
+    "av_needs": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "arrival": {
+      "status": "received",
+      "value": "2027-04-16T21:50 AeroAntara AA916 KLP-BOS",
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "receipts": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "slides": {
+      "status": "received",
+      "value": "https://files.kallpa2050-example.an/s/navarro-keynote-antara (download link; not opened)",
+      "source": "data/inbox/013.txt"
+    }
+  },
+  "S12": {
+    "bio": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "headshot": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "dietary": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "breakfast_rsvp": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "av_needs": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "arrival": {
+      "status": "missing",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "receipts": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    },
+    "slides": {
+      "status": "not_required",
+      "value": null,
+      "source": "data/speakers.csv; data/policies.md"
+    }
+  }
+}

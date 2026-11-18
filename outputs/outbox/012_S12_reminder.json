@@ -1,0 +1,21 @@
+{
+  "to": [
+    "lbenitez@unkallpa.edu.an"
+  ],
+  "cc": [],
+  "speaker_id": "S12",
+  "language": "es",
+  "purpose": "reminder",
+  "subject": "Datos pendientes — Panel 4 del sábado",
+  "body": "Hola, Lucas:\n\n¿Podrías enviarnos tu bio corta (máximo 120 palabras), una foto, tus alergias o restricciones alimentarias (o «ninguna»), tu confirmación para el desayuno del viernes 16 (09:30–10:30, comedor de Dunmore Hall, 3 Quincy Walk), tus necesidades de AV (o «ninguna») y la fecha y hora de llegada a Boston? El plazo del martes 13 a las 23:59 ya pasó; agradeceríamos tu respuesta cuanto antes.\n\nTe esperamos el sábado 17 a las 10:45 en Larkin Auditorium (14 Hollis Lane, Cambridge). El Panel 4, en formato de charla y preguntas, es de 11:15 a 12:15.\n\nGracias,\nEquipo Antara",
+  "policy_refs": null,
+  "sent": true,
+  "send_blocked_reasons": [],
+  "fingerprint": "122af941e89e4f9b4e912dd01c5d7c0cbc727e49ee0eafdc3e91cc9e2b3bdcaa",
+  "message_id": "M-122af941e89e4f9b4e91",
+  "logical_file": "012_S12_reminder.json",
+  "outbox_file": "012_S12_reminder.json",
+  "supersedes": null,
+  "sent_at": "2026-11-18T00:27:56.155488+00:00",
+  "run_id": 8
+}

@@ -1,0 +1,24 @@
+{
+  "to": [
+    "ecastaneda@bancocentral-antara.an"
+  ],
+  "cc": [],
+  "speaker_id": "S01",
+  "language": "es",
+  "purpose": "reminder",
+  "subject": "Pendientes de AV y diapositivas — keynote del viernes",
+  "body": "Hola, Elena:\n\nGracias por enviarnos tus datos. Para tu keynote del viernes 16, ¿podrías confirmarnos si necesitas algo de AV y compartir tus diapositivas (puede ser un enlace)? Los plazos originales fueron el martes 13 a las 23:59 para AV y el jueves 15 a las 18:00 para las diapositivas; como ya pasaron, agradeceríamos que nos los envíes cuanto antes.\n\nLa charla es de 17:30 a 18:30 en Larkin Auditorium (14 Hollis Lane, Cambridge); te esperamos a las 17:00. Sobre la vestimenta: el código es business casual ambos días.\n\n¡Gracias!\nEquipo Antara",
+  "policy_refs": [
+    "Dress code: business casual, both days. / Código de vestimenta: business casual, ambos días.",
+    "Slides: send by **Thursday April 15, 6:00 PM**. Large files can be sent as a download link. / Enviar las diapositivas hasta el **jueves 15 de abril, 6:00 PM**. Archivos pesados pueden enviarse como enlace."
+  ],
+  "sent": true,
+  "send_blocked_reasons": [],
+  "fingerprint": "3de3163d49f1840d1c58eee50cf3b714eb2f5d6f6f73ae373b398aadb40e7c3e",
+  "message_id": "M-3de3163d49f1840d1c58",
+  "logical_file": "001_S01_reminder.json",
+  "outbox_file": "001_S01_reminder.json",
+  "supersedes": null,
+  "sent_at": "2026-11-18T00:27:55.784061+00:00",
+  "run_id": 8
+}

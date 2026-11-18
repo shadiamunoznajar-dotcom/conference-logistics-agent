@@ -1,0 +1,491 @@
+{
+ "name": "Antara Conference at Harvard 2027",
+ "name_es": "Conferencia Antara en Harvard 2027",
+ "organizer": "Antara Students Association at Harvard (ASAH)",
+ "organizer_email": "conference@asah-antara.org",
+ "today": "2027-04-10",
+ "timezone": "America/New_York",
+ "venues": {
+  "main": "Larkin Auditorium, 14 Hollis Lane, Cambridge",
+  "breakfast": "Dunmore Hall Dining Room, 3 Quincy Walk, Cambridge",
+  "dinner": "Larkin Hall Atrium (same building as the auditorium)"
+ },
+ "hotel": {
+  "name": "Charles River Grand Hotel",
+  "address": "88 Riverside Way, Cambridge",
+  "reservations_email": "groups@charlesrivergrand-example.com"
+ },
+ "deadlines": {
+  "slides": "2027-04-15T18:00",
+  "everything_else": "2027-04-13T23:59"
+ },
+ "speaker_call_time_minutes_before_session": 30,
+ "blocks": [
+  {
+   "id": "D0-AV",
+   "day": "Thu",
+   "start": "2027-04-15T17:00",
+   "end": "2027-04-15T18:00",
+   "title": "AV test / Prueba de AV",
+   "venue": "main",
+   "roles": [
+    {
+     "role": "lead",
+     "count": 1
+    },
+    {
+     "role": "it",
+     "count": 1,
+     "skill": "av"
+    }
+   ]
+  },
+  {
+   "id": "D1-BRK",
+   "day": "Fri",
+   "start": "2027-04-16T09:30",
+   "end": "2027-04-16T10:30",
+   "title": "Speaker breakfast / Desayuno de speakers",
+   "venue": "breakfast",
+   "roles": [
+    {
+     "role": "host",
+     "count": 1,
+     "skill": "bilingual"
+    }
+   ]
+  },
+  {
+   "id": "D1-SETUP",
+   "day": "Fri",
+   "start": "2027-04-16T14:30",
+   "end": "2027-04-16T15:30",
+   "title": "Setup: signage, banners, recording / Montaje",
+   "venue": "main",
+   "roles": [
+    {
+     "role": "lead",
+     "count": 1
+    },
+    {
+     "role": "it",
+     "count": 1,
+     "skill": "av"
+    },
+    {
+     "role": "signage",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "D1-REG",
+   "day": "Fri",
+   "start": "2027-04-16T15:00",
+   "end": "2027-04-16T16:00",
+   "title": "Registration / Registro",
+   "venue": "main",
+   "roles": [
+    {
+     "role": "lead",
+     "count": 1
+    },
+    {
+     "role": "registration",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "id": "D1-WEL",
+   "day": "Fri",
+   "start": "2027-04-16T16:00",
+   "end": "2027-04-16T16:10",
+   "title": "Welcome remarks / Palabras de bienvenida",
+   "venue": "main",
+   "roles": [
+    {
+     "role": "mc",
+     "count": 1,
+     "skill": "bilingual"
+    },
+    {
+     "role": "it",
+     "count": 1,
+     "skill": "av"
+    }
+   ]
+  },
+  {
+   "id": "D1-P1",
+   "day": "Fri",
+   "start": "2027-04-16T16:10",
+   "end": "2027-04-16T17:10",
+   "title": "Panel 1: Democracy and governance in Antara / Democracia y gobernabilidad en Antara",
+   "venue": "main",
+   "speakers": [
+    "S02",
+    "S03",
+    "S04"
+   ],
+   "moderator": "S02",
+   "language": "es",
+   "roles": [
+    {
+     "role": "lead",
+     "count": 1
+    },
+    {
+     "role": "it",
+     "count": 1,
+     "skill": "av"
+    },
+    {
+     "role": "mobilizer",
+     "count": 1
+    },
+    {
+     "role": "note_taker",
+     "count": 1
+    },
+    {
+     "role": "escort",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "D1-BREAK",
+   "day": "Fri",
+   "start": "2027-04-16T17:10",
+   "end": "2027-04-16T17:30",
+   "title": "Coffee break",
+   "venue": "main",
+   "roles": [
+    {
+     "role": "catering_lead",
+     "count": 1
+    },
+    {
+     "role": "catering",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "D1-K1",
+   "day": "Fri",
+   "start": "2027-04-16T17:30",
+   "end": "2027-04-16T18:30",
+   "title": "Keynote: Antara's growth after the commodity boom / El crecimiento de Antara despues del boom",
+   "venue": "main",
+   "speakers": [
+    "S01"
+   ],
+   "moderator": null,
+   "language": "es",
+   "agreed_minutes": 60,
+   "roles": [
+    {
+     "role": "lead",
+     "count": 1
+    },
+    {
+     "role": "it",
+     "count": 1,
+     "skill": "av"
+    },
+    {
+     "role": "mobilizer",
+     "count": 1
+    },
+    {
+     "role": "escort",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "D1-CLOSE",
+   "day": "Fri",
+   "start": "2027-04-16T18:30",
+   "end": "2027-04-16T18:45",
+   "title": "Day 1 closing / Cierre dia 1",
+   "venue": "main",
+   "roles": [
+    {
+     "role": "mc",
+     "count": 1,
+     "skill": "bilingual"
+    }
+   ]
+  },
+  {
+   "id": "D1-DIN",
+   "day": "Fri",
+   "start": "2027-04-16T19:00",
+   "end": "2027-04-16T21:00",
+   "title": "Networking dinner / Cena de networking",
+   "venue": "dinner",
+   "roles": [
+    {
+     "role": "lead",
+     "count": 1
+    },
+    {
+     "role": "host",
+     "count": 1,
+     "skill": "bilingual"
+    },
+    {
+     "role": "catering",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "id": "D2-SETUP",
+   "day": "Sat",
+   "start": "2027-04-17T07:30",
+   "end": "2027-04-17T08:30",
+   "title": "Setup / Montaje",
+   "venue": "main",
+   "roles": [
+    {
+     "role": "lead",
+     "count": 1
+    },
+    {
+     "role": "it",
+     "count": 1,
+     "skill": "av"
+    },
+    {
+     "role": "signage",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "D2-REG",
+   "day": "Sat",
+   "start": "2027-04-17T08:00",
+   "end": "2027-04-17T09:00",
+   "title": "Registration and breakfast / Registro y desayuno",
+   "venue": "main",
+   "roles": [
+    {
+     "role": "lead",
+     "count": 1
+    },
+    {
+     "role": "registration",
+     "count": 2
+    },
+    {
+     "role": "catering",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "D2-P2",
+   "day": "Sat",
+   "start": "2027-04-17T09:00",
+   "end": "2027-04-17T10:00",
+   "title": "Panel 2: Water and mining in the Antarean highlands / Agua y mineria en la sierra antarena",
+   "venue": "main",
+   "speakers": [
+    "S05",
+    "S06",
+    "S07"
+   ],
+   "moderator": "S07",
+   "language": "es+en",
+   "roles": [
+    {
+     "role": "lead",
+     "count": 1
+    },
+    {
+     "role": "it",
+     "count": 1,
+     "skill": "av"
+    },
+    {
+     "role": "mobilizer",
+     "count": 1
+    },
+    {
+     "role": "note_taker",
+     "count": 1
+    },
+    {
+     "role": "escort",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "D2-BREAK",
+   "day": "Sat",
+   "start": "2027-04-17T10:00",
+   "end": "2027-04-17T10:15",
+   "title": "Short break",
+   "venue": "main",
+   "roles": [
+    {
+     "role": "catering",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "D2-P3",
+   "day": "Sat",
+   "start": "2027-04-17T10:15",
+   "end": "2027-04-17T11:15",
+   "title": "Panel 3: Education and talent / Educacion y talento",
+   "venue": "main",
+   "speakers": [
+    "S08",
+    "S09",
+    "S10"
+   ],
+   "moderator": "S10",
+   "language": "es",
+   "roles": [
+    {
+     "role": "lead",
+     "count": 1
+    },
+    {
+     "role": "it",
+     "count": 1,
+     "skill": "av"
+    },
+    {
+     "role": "mobilizer",
+     "count": 1
+    },
+    {
+     "role": "note_taker",
+     "count": 1
+    },
+    {
+     "role": "escort",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "D2-P4",
+   "day": "Sat",
+   "start": "2027-04-17T11:15",
+   "end": "2027-04-17T12:15",
+   "title": "Panel 4: Antara and regional integration / Antara y la integracion regional",
+   "venue": "main",
+   "speakers": [
+    "S12"
+   ],
+   "moderator": null,
+   "language": "es",
+   "roles": [
+    {
+     "role": "lead",
+     "count": 1
+    },
+    {
+     "role": "it",
+     "count": 1,
+     "skill": "av"
+    },
+    {
+     "role": "mobilizer",
+     "count": 1
+    },
+    {
+     "role": "note_taker",
+     "count": 1
+    },
+    {
+     "role": "escort",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "D2-LUNCH",
+   "day": "Sat",
+   "start": "2027-04-17T12:15",
+   "end": "2027-04-17T13:15",
+   "title": "Lunch / Almuerzo",
+   "venue": "main",
+   "roles": [
+    {
+     "role": "catering_lead",
+     "count": 1
+    },
+    {
+     "role": "catering",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "id": "D2-K2",
+   "day": "Sat",
+   "start": "2027-04-17T13:15",
+   "end": "2027-04-17T13:45",
+   "title": "Closing keynote: Kallpa 2050 / Keynote de cierre: Kallpa 2050",
+   "venue": "main",
+   "speakers": [
+    "S11"
+   ],
+   "moderator": null,
+   "language": "es",
+   "agreed_minutes": 30,
+   "roles": [
+    {
+     "role": "lead",
+     "count": 1
+    },
+    {
+     "role": "it",
+     "count": 1,
+     "skill": "av"
+    },
+    {
+     "role": "mobilizer",
+     "count": 1
+    },
+    {
+     "role": "escort",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "D2-CLOSE",
+   "day": "Sat",
+   "start": "2027-04-17T13:45",
+   "end": "2027-04-17T14:00",
+   "title": "Closing remarks / Palabras de cierre",
+   "venue": "main",
+   "roles": [
+    {
+     "role": "mc",
+     "count": 1,
+     "skill": "bilingual"
+    },
+    {
+     "role": "it",
+     "count": 1,
+     "skill": "av"
+    }
+   ]
+  }
+ ],
+ "theme": "Rebuilding Trust: State, Markets and Society in Antara / Reconstruyendo la confianza: Estado, mercado y sociedad en Antara",
+ "country_note": "Antara is a fictional Andean, Spanish-speaking country (capital: Kallpa; currency: inti; airline: AeroAntara; airport: KLP). Everything in this dataset is invented."
+}

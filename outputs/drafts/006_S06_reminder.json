@@ -1,0 +1,22 @@
+{
+  "to": [
+    "ricardo.paredesl@gmail.com"
+  ],
+  "cc": [],
+  "speaker_id": "S06",
+  "language": "es",
+  "purpose": "reminder",
+  "subject": "Pendientes y llegada — Panel 2",
+  "body": "Hola, Ricardo:\n\nGracias por el itinerario y los comprobantes. Nos faltan tu foto, tus alergias o restricciones alimentarias (o «ninguna»), tu confirmación para el desayuno del viernes 16 (09:30–10:30, comedor de Dunmore Hall, 3 Quincy Walk) y tus necesidades de AV (o «ninguna»). El plazo original fue el 13 de abril a las 23:59; si puedes, responde cuanto antes.\n\nEl Panel 2 es el sábado 17 de 09:00 a 10:00; te esperamos a las 08:30 en Larkin Auditorium (14 Hollis Lane, Cambridge). Estamos verificando la estancia del 16 al 18 con el hotel. Si tienes una hora estimada de llegada al hotel, compártela: el check-in habitual es a las 15:00 y no está garantizado antes de esa hora.\n\nGracias,\nEquipo Antara",
+  "policy_refs": [
+    "Standard check-in is 3:00 PM. The organizers can **request** early check-in (not guaranteed) for anyone arriving at the hotel before 3:00 PM. / El check-in es a las 3:00 PM. La organización puede **solicitar** early check-in (no garantizado) si el speaker llega antes de las 3:00 PM."
+  ],
+  "sent": false,
+  "send_blocked_reasons": [
+    "Recipient is not the original approved speaker address.",
+    "Speaker has an open human decision."
+  ],
+  "fingerprint": "6482b59efd450f4f86f7a78c56cbf84cd7da36c087f47749cc8e61762a45df10",
+  "run_id": 6,
+  "context_hash": "f451691c29115211bd18bb7f4acd7f3c5e2e6ec90b30ed5b187d6b68ad3b9162"
+}

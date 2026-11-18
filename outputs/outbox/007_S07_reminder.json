@@ -1,0 +1,21 @@
+{
+  "to": [
+    "mlin@waterpolicy-example.org"
+  ],
+  "cc": [],
+  "speaker_id": "S07",
+  "language": "en",
+  "purpose": "reminder",
+  "subject": "Missing logistics details — Saturday Panel 2",
+  "body": "Hi Margaret,\n\nCould you send a short bio (120 words max), headshot, allergies or dietary restrictions (or “none”), Friday speaker breakfast RSVP, AV needs (or “none”), and your Boston-area arrival date and time? The April 13, 11:59 PM deadline has passed, so please reply as soon as you can. Friday’s breakfast is 9:30–10:30 AM at Dunmore Hall Dining Room (3 Quincy Walk, Cambridge).\n\nAs Panel 2 moderator, please check in Saturday, April 17 at 8:30 AM at Larkin Auditorium (14 Hollis Lane, Cambridge); the bilingual session runs 9:00–10:00 AM.\n\nThanks,\nAntara Conference Team",
+  "policy_refs": null,
+  "sent": true,
+  "send_blocked_reasons": [],
+  "fingerprint": "bf939f54095ec3eec2c2a83a875e9fba7dda6ba2d75450bb8bf7595bc542a708",
+  "message_id": "M-bf939f54095ec3eec2c2",
+  "logical_file": "007_S07_reminder.json",
+  "outbox_file": "007_S07_reminder.json",
+  "supersedes": null,
+  "sent_at": "2026-11-18T00:27:55.989081+00:00",
+  "run_id": 8
+}

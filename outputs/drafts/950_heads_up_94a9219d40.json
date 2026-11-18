@@ -1,0 +1,23 @@
+{
+  "to": [
+    "conference@asah-antara.org"
+  ],
+  "cc": [
+    "paula.rios@asah-antara.org"
+  ],
+  "speaker_id": "S03",
+  "language": "en",
+  "purpose": "heads_up",
+  "subject": "Urgent chair decision: Ana Lucía’s flight lands at the Friday Panel 1 call time",
+  "body": "Paula and team,\n\nAna Lucía’s AA920 was canceled. AA926 lands at Boston Logan Fri Apr 16 at 3:40 PM EDT—the exact Panel 1 venue call and only 30 minutes before the 4:10 PM start at Larkin Auditorium. She plans to go directly to Larkin with luggage, so she will miss call and may miss the opening. No venue ETA is confirmed.\n\nPlease decide before doors open how Mateo Villalobos should proceed if she isn't there: start as scheduled with those present and bring her in at a suitable transition, or approve another contingency. Please brief Mateo, panel lead Sofía Vargas and escort Lucía Medina (on duty from 3:40 PM), and identify a luggage handoff point. Ask Ana Lucía for an ETA once she is on the way. The 4:10–5:10 PM program remains unchanged pending your decision; no format or timing change has been promised.",
+  "policy_refs": null,
+  "sent": false,
+  "send_blocked_reasons": [
+    "Only reminders and policy answers may be sent.",
+    "Recipient is not the original approved speaker address.",
+    "Speaker has an open human decision."
+  ],
+  "fingerprint": "d3077e8b337b53acbf0e1c67bb8c07383c5f952f5648d980a6a09ef71423d219",
+  "run_id": 6,
+  "context_hash": "a24da11a23a9a96ba24681657440a9733ed0df1cda0ac2ce97d2bc28280502a8"
+}

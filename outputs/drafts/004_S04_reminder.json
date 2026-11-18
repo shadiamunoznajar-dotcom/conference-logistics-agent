@@ -1,0 +1,22 @@
+{
+  "to": [
+    "dokafor@civicslab-example.org"
+  ],
+  "cc": [],
+  "speaker_id": "S04",
+  "language": "en",
+  "purpose": "reminder",
+  "subject": "Panel 1: dietary information and slides",
+  "body": "Hi Daniel,\n\nCould you send any allergies or dietary restrictions (or confirm none), and share your 6–8 slides? The original deadlines were April 13 at 11:59 PM and April 15 at 6:00 PM respectively; please send them as soon as you can. A download link is fine. We’ve noted your projector and clicker request and your breakfast decline.\n\nPlease check in Friday, April 16 at 3:40 PM at Larkin Auditorium (14 Hollis Lane, Cambridge) for the 4:10–5:10 PM panel. The dinner is for speakers under the current policy; your guest request is pending organizer review and your wife is not confirmed.\n\nThanks,\nAntara Conference Team",
+  "policy_refs": [
+    "Networking dinner: Friday April 16, 7:00–9:00 PM. Speakers only (guests/companions are not covered by this policy). / Cena de networking: solo speakers (los acompañantes no están contemplados en esta política).",
+    "Slides: send by **Thursday April 15, 6:00 PM**. Large files can be sent as a download link. / Enviar las diapositivas hasta el **jueves 15 de abril, 6:00 PM**. Archivos pesados pueden enviarse como enlace."
+  ],
+  "sent": false,
+  "send_blocked_reasons": [
+    "Speaker has an open human decision."
+  ],
+  "fingerprint": "38d40971152a0a0bc0b2f844d1b97d595fd6c66de7a3b30a5176ad02aba864b5",
+  "run_id": 6,
+  "context_hash": "f3c8fe94c3e392554d5a4c6fd3376576495bed444e9d26256638e76d5c7a96cd"
+}
