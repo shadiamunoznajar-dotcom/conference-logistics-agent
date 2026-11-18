@@ -96,7 +96,36 @@ button.ghost{background:transparent;color:var(--accent)}
 .scorebox{display:grid;gap:12px}
 .scorerow{display:grid;grid-template-columns:180px 1fr 70px;gap:12px;align-items:center;font-size:14px}
 @media (max-width:560px){.scorerow{grid-template-columns:1fr 60px}.scorerow .bar{grid-column:1 / -1}}
-@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+.replay{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:860px){.replay{grid-template-columns:1fr}}
+.state{position:sticky;top:calc(env(safe-area-inset-top,0px) + 56px);display:grid;gap:12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);padding:14px;min-width:0}
+@media (max-width:860px){.state{position:static}}
+.nowline{display:flex;justify-content:space-between;gap:8px;align-items:baseline;font-size:13px}
+.nowline .tool{font-family:var(--mono);font-size:12px;color:var(--accent)}
+.reading{font-size:13px;color:var(--muted)}
+.counters{display:grid;grid-template-columns:repeat(auto-fit,minmax(78px,1fr));gap:8px}
+.counters div{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 8px;display:grid}
+.counters b{font-family:var(--display);font-size:20px;line-height:1.1}
+.counters span{font-size:11px;color:var(--muted);line-height:1.2}
+.counters .hot b{color:var(--bad)}
+table.mini{font-size:12px;width:100%}
+table.mini th,table.mini td{padding:2px 3px;border:0;text-align:center;background:transparent;position:static}
+table.mini th{font-size:10px;letter-spacing:0;text-transform:none}
+table.mini td:first-child{text-align:left;white-space:nowrap;color:var(--muted);padding-right:6px}
+table.mini tr.rowhot td:first-child{color:var(--ink);font-weight:600}
+table.mini .chip{min-width:18px;height:18px;line-height:18px;font-size:11px;border-radius:4px}
+.chip.pulse{outline:2px solid var(--accent);outline-offset:1px;animation:pulse .9s ease-out}
+@keyframes pulse{from{transform:scale(1.5)}to{transform:scale(1)}}
+.schedline{display:flex;justify-content:space-between;gap:10px;font-size:13px;border-top:1px solid var(--line);padding-top:8px;flex-wrap:wrap}
+.feed{display:grid;gap:6px;border-top:1px solid var(--line);padding-top:8px;min-height:120px}
+.ev{display:grid;grid-template-columns:10px 1fr;gap:8px;align-items:start;font-size:13px;color:var(--muted)}
+.ev i{width:8px;height:8px;border-radius:50%;margin-top:6px;background:var(--na)}
+.ev.latest{color:var(--ink);font-weight:500}
+.ev-human i{background:var(--bad)} .ev-flag i{background:var(--warn)} .ev-ok i{background:var(--ok)} .ev-msg i{background:var(--accent)} .ev-mail i{background:var(--ink)}
+.logrow.future{opacity:.42}
+.logrow[data-i]{cursor:pointer}
+.log{max-height:720px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 </style>
 
 <div class="wrap">
@@ -330,35 +359,110 @@ V.show = () => `<div class="panel md"><h2 style="margin-top:0">Run of show</h2>$
 
 V.replay = () => `<div class="panel">
   <h2>Replay</h2>
-  <p class="small">Every tool call the agent made, in order, with the reason it gave. Runs are separated by the moment they started. Press play to step through one run.</p>
+  <p class="small">Watch the agent work. Each row on the right is one tool call the model chose, with the reason it gave. The panel on the left shows what the agent knows after that step: the speaker tracker filling in, flags for a person, and messages written. Select any row to jump to that moment.</p>
   <div class="toolbar" style="margin:10px 0 12px">
-    <select id="runpick">${RUNS.map((r,i)=>`<option value="${i}">Run ${r.n}: ${esc(r.label)} (${r.steps.length} steps)</option>`).join('')}</select>
-    <select id="toolpick"><option value="">All tools</option>${[...new Set(D.log.map(e=>e.tool))].sort().map(x=>`<option>${x}</option>`).join('')}</select>
-    <input type="search" id="logq" placeholder="Search reasons or arguments" aria-label="Search the log">
-    <button id="play">Play</button><button class="ghost" id="stop">Stop</button>
+    <select id="runpick" aria-label="Choose a run">${RUNS.map((r,i)=>`<option value="${i}">Run ${r.n}: ${esc(r.label)} (${r.steps.length} steps)</option>`).join('')}</select>
+    <button id="play">Play</button>
+    <button class="ghost" id="stepbtn">Next step</button>
+    <button class="ghost" id="restart">Back to start</button>
   </div>
-  <div class="log" id="log"></div>
+  <div class="replay">
+    <div class="state" id="state"></div>
+    <div class="log" id="log"></div>
+  </div>
 </div>
 <div class="panel" id="mailbox" hidden></div>`;
 function argSummary(e){
-  const a = {...(e.args||{})}; delete a.reason; delete a.body;
+  const a = {...(e.args||{})}; delete a.reason; delete a.body; delete a.policy_refs;
   if(a.rows) a.rows = `${a.rows.length} rows`;
   if(a.markdown) a.markdown = `${a.markdown.length} characters`;
-  return Object.entries(a).map(([k,v]) => `${k}: ${typeof v==='object' ? JSON.stringify(v) : v}`).join(' · ').slice(0,260);
+  if(a.value && String(a.value).length > 90) a.value = String(a.value).slice(0,90) + '…';
+  return Object.entries(a).map(([k,v]) => `${k}: ${typeof v==='object' ? JSON.stringify(v) : v}`).join(' · ').slice(0,240);
+}
+const firstName = id => { const s = SPK[id]; if(!s) return id; const p = s.name.replace(/^(Dra?\.|Prof\.)\s+/,'').split(' '); return p[0] + ' ' + (p[1]||'')[0] + '.'; };
+const parse = s => { try { return JSON.parse(s); } catch(e){ return {}; } };
+const LOGGED_FLAGS = new Set(D.log.filter(e => e.tool==='add_flag').map(e => parse(e.result_summary).flag?.id).filter(Boolean));
+const PRE_FLAGS = D.flags.filter(f => !LOGGED_FLAGS.has(f.id) && f.type !== 'contact_update');
+function initState(){
+  const tr = {};
+  D.speakers.forEach(s => { const c = s.travel_category; tr[s.id] = {};
+    ITEMS.forEach(i => { let st = 'missing';
+      if(i==='receipts' && c!=='B') st = 'not_required';
+      if(i==='arrival') st = c==='L' ? 'not_required' : c==='A' ? 'received' : 'missing';
+      if(i==='slides') st = s.role==='keynote' ? 'missing' : 'not_required';
+      tr[s.id][i] = st; }); });
+  const flags = {};
+  D.flags.filter(f => !LOGGED_FLAGS.has(f.id) && f.type !== 'contact_update').forEach(f => { flags[f.id] = {type:f.type, subject:f.subject, human:f.needs_human, open:true, pre:true}; });
+  return {tr, flags, done:new Set(), reading:null, msgs:0, sent:0, held:0, sched:'Not built yet', feed:[], changed:null, cur:null};
+}
+function apply(st, e){
+  const a = e.args || {}, r = parse(e.result_summary); st.changed = null; st.cur = e;
+  const push = (cls, text, file) => { st.feed.push({cls, text, file, step:e.step}); if(st.feed.length > 6) st.feed.shift(); };
+  switch(e.tool){
+    case 'read_email': st.reading = a.file; push('mail', `Reading email ${a.file}`, a.file); break;
+    case 'checkpoint_email': st.done.add(a.file); if(st.reading === a.file) st.reading = null; break;
+    case 'update_tracker': if(st.tr[a.speaker_id]){ st.tr[a.speaker_id][a.item] = a.status; st.changed = {sid:a.speaker_id, item:a.item}; push('upd', `${firstName(a.speaker_id)} · ${ITEM_LABEL[a.item]||a.item} → ${String(a.status).replace('_',' ')}`); } break;
+    case 'add_flag': { const id = r.flag?.id || ('step'+e.step); st.flags[id] = {type:a.type, subject:a.subject, human:a.needs_human, open:true};
+      push(a.needs_human ? 'human' : 'flag', `${a.needs_human ? 'For a person' : 'Flag'}: ${FLAG_LABEL[a.type]||a.type} · ${who(a.subject)}`); break; }
+    case 'resolve_flag': if(st.flags[a.flag_id]) st.flags[a.flag_id].open = false; push('ok', `Resolved an older flag (superseded)`); break;
+    case 'write_message': st.msgs++; push('msg', `Wrote ${a.purpose} to ${a.speaker_id ? firstName(a.speaker_id) : (a.to||[])[0]}${(a.to||[]).some(x=>/charlesrivergrand/.test(x)) ? ' (hotel)' : ''}`); break;
+    case 'restore_draft': st.msgs++; push('msg', `Restored a still-valid draft`); break;
+    case 'dispatch_message': if(r.sent){ st.sent++; push('ok', `Sent ${a.file}`); } else { st.held++; push('flag', `Held ${a.file}: ${(r.blocked_reasons||[]).filter(x=>x!=='Draft mode.').join(' ') || 'not eligible'}`); } break;
+    case 'save_schedule': st.sched = `${r.saved_rows ?? '?'} slots saved, not yet checked`; push('upd', `Saved the volunteer schedule`); break;
+    case 'validate_schedule': st.sched = r.clean ? `${D.schedule.length} slots, checked: 0 violations` : `Checked: ${r.violation_count} violations to fix`; push(r.clean ? 'ok' : 'flag', r.clean ? 'Schedule passed every rule' : `Schedule check found ${r.violation_count} problems`); break;
+    case 'set_availability_override': push('upd', `Updated ${VOL[a.volunteer_id]?.name || a.volunteer_id}'s availability`); break;
+    case 'update_contact': { const cf = D.flags.find(f => f.type==='contact_update' && f.subject===a.speaker_id && !LOGGED_FLAGS.has(f.id)); if(cf) st.flags[cf.id] = {type:cf.type, subject:cf.subject, human:cf.needs_human, open:!cf.resolved};
+      push('human', `Proposed new address for ${firstName(a.speaker_id)} (needs approval)`); break; }
+    case 'write_report': push('upd', `Wrote ${String(a.name).replace('_',' ')} report`); break;
+    case 'finish': push('ok', `Finished the run`); break;
+  }
+}
+function stateFor(runIdx, k){
+  const st = initState(); const start = D.log.indexOf(RUNS[runIdx].steps[0]);
+  for(let i = 0; i < start; i++) apply(st, D.log[i]);
+  st.msgs = 0; st.sent = 0; st.held = 0; st.feed = []; st.changed = null; st.cur = null;
+  if(runIdx === 0) PRE_FLAGS.forEach(f => st.feed.push({cls:'human', text:`Code check before the model starts: ${FLAG_LABEL[f.type]||f.type} · ${who(f.subject)}`, step:0}));
+  for(let i = 0; i < k; i++) apply(st, RUNS[runIdx].steps[i]);
+  return st;
+}
+function renderState(st, runIdx, k){
+  const r = RUNS[runIdx], openF = Object.values(st.flags).filter(f=>f.open), human = openF.filter(f=>f.human);
+  const e = st.cur;
+  $('#state').innerHTML = `
+    <div class="nowline"><span class="mono">${k === 0 ? 'Before the first step' : `Step ${k} of ${r.steps.length}`}</span>${e ? `<span class="tool">${esc(e.tool)}</span>` : ''}</div>
+    ${st.reading ? `<div class="reading">Reading <a class="src" data-mail="${st.reading}" tabindex="0" role="button">${st.reading}</a></div>` : ''}
+    <div class="counters">
+      <div><b class="mono">${st.done.size}</b><span>emails done</span></div>
+      <div><b class="mono">${openF.length}</b><span>open flags</span></div>
+      <div class="hot"><b class="mono">${human.length}</b><span>for a person</span></div>
+      <div><b class="mono">${st.msgs}</b><span>messages this run</span></div>
+      ${st.sent || st.held ? `<div><b class="mono">${st.sent}</b><span>sent</span></div><div><b class="mono">${st.held}</b><span>held</span></div>` : ''}
+    </div>
+    <table class="mini"><thead><tr><th></th>${ITEMS.map(i=>`<th title="${ITEM_LABEL[i]}">${ITEM_LABEL[i].slice(0,3)}</th>`).join('')}</tr></thead><tbody>
+      ${D.speakers.map(s => `<tr${st.changed && st.changed.sid===s.id ? ' class="rowhot"' : ''}><td>${esc(firstName(s.id))}</td>${ITEMS.map(i => { const v = st.tr[s.id][i]; const hot = st.changed && st.changed.sid===s.id && st.changed.item===i; return `<td><span class="chip s-${v}${hot ? ' pulse' : ''}" title="${ITEM_LABEL[i]}: ${v.replace('_',' ')}">${STATUS_MARK[v]}</span></td>`; }).join('')}</tr>`).join('')}
+    </tbody></table>
+    <div class="schedline"><span class="small">Volunteer schedule</span><span>${esc(st.sched)}</span></div>
+    <div class="feed">${st.feed.slice().reverse().map((f,i) => `<div class="ev ev-${f.cls}${i===0 && f.step===e?.step ? ' latest' : ''}"><i></i><span>${esc(f.text)}${f.file && f.cls!=='mail' ? '' : ''}</span></div>`).join('') || '<p class="small">Press Play to watch this run step by step.</p>'}</div>`;
 }
 function bindReplay(){
-  let timer = null;
-  const draw = () => { const r = RUNS[+$('#runpick').value], tool = $('#toolpick').value, q = $('#logq').value.toLowerCase();
-    const rows = r.steps.filter(e => (!tool || e.tool===tool) && (!q || JSON.stringify(e).toLowerCase().includes(q)));
+  let timer = null, runIdx = 0, k = 0;
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const drawLog = () => { const r = RUNS[runIdx];
     $('#log').innerHTML = `<div class="logrow run">Run ${r.n} · ${esc(r.label)} · started ${new Date(r.start).toLocaleString([], {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})}</div>` +
-      rows.map(e => `<div class="logrow" data-step="${e.step}"><span class="mono small">#${e.step}</span><span class="tool">${esc(e.tool)}</span><div class="why">${esc(e.note || e.args?.reason || '')}<div class="args">${esc(argSummary(e))} ${e.args?.file ? srcLinks(e.args.file) : ''}</div></div></div>`).join(''); };
+      r.steps.map((e,i) => `<div class="logrow" data-i="${i+1}" tabindex="0"><span class="mono small">${i+1}</span><span class="tool">${esc(e.tool)}</span><div class="why">${esc(e.note || e.args?.reason || '')}<div class="args">${esc(argSummary(e))}</div></div></div>`).join('');
+    document.querySelectorAll('#log .logrow[data-i]').forEach(row => { const go = () => { stop(); goTo(+row.dataset.i); };
+      row.onclick = ev => { if(!ev.target.closest('[data-mail]')) go(); }; row.onkeydown = ev => { if(ev.key==='Enter') go(); }; }); };
+  const goTo = (n, scroll=true) => { k = Math.max(0, Math.min(n, RUNS[runIdx].steps.length)); renderState(stateFor(runIdx, k), runIdx, k);
+    document.querySelectorAll('#log .logrow[data-i]').forEach(row => { const i = +row.dataset.i; row.classList.toggle('now', i===k); row.classList.toggle('future', i>k); });
+    const cur = $(`#log .logrow[data-i="${k}"]`); if(cur && scroll){ const box = $('#log'); box.scrollTop = cur.offsetTop - box.offsetTop - box.clientHeight/3; } };
   const stop = () => { clearInterval(timer); timer = null; $('#play').textContent = 'Play'; };
-  $('#play').onclick = () => { if(timer){ stop(); return; } const rows = [...document.querySelectorAll('#log .logrow[data-step]')]; let i = 0;
-    if(matchMedia('(prefers-reduced-motion: reduce)').matches){ return; }
-    $('#play').textContent = 'Pause'; timer = setInterval(() => { rows.forEach(r=>r.classList.remove('now')); if(i>=rows.length){ stop(); return; } rows[i].classList.add('now'); rows[i].scrollIntoView({block:'nearest'}); i++; }, 450); };
-  $('#stop').onclick = () => { stop(); document.querySelectorAll('#log .now').forEach(r=>r.classList.remove('now')); };
-  ['#runpick','#toolpick'].forEach(s => $(s).onchange = () => { stop(); draw(); }); $('#logq').oninput = draw;
-  const demo = RUNS.findIndex(r => r.label.startsWith('Demo')); if(demo >= 0) $('#runpick').value = demo; draw();
+  $('#play').onclick = () => { if(timer){ stop(); return; } if(k >= RUNS[runIdx].steps.length) goTo(0);
+    $('#play').textContent = 'Pause'; timer = setInterval(() => { if(k >= RUNS[runIdx].steps.length){ stop(); return; } goTo(k+1); }, reduce ? 1200 : 650); };
+  $('#stepbtn').onclick = () => { stop(); goTo(k+1); };
+  $('#restart').onclick = () => { stop(); goTo(0); };
+  $('#runpick').onchange = () => { stop(); runIdx = +$('#runpick').value; drawLog(); goTo(RUNS[runIdx].steps.length, false); };
+  const demo = RUNS.findIndex(r => r.label.startsWith('Demo')); runIdx = demo >= 0 ? demo : 0; $('#runpick').value = runIdx;
+  drawLog(); goTo(RUNS[runIdx].steps.length, false);
 }
 
 V.evaluation = () => { const e = D.eval;
